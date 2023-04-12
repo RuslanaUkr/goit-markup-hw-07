@@ -1,0 +1,413 @@
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 392px;
+  }
+
+  .mob-menu-icon {
+    stroke: var(--dark);
+  }
+
+  .mob-menu-btn {
+    border: none;
+    background-color: transparent;
+  }
+  .mob-menu-btn-close {
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--accent);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  .mob-menu {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primery-bcg);
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .mob-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mob-menu-link {
+    color: var(--dark);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    transition: background-color var(--transition);
+  }
+  .mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .mob-menu-link-tel {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-brand);
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .mob-menu-link-email {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    transition: background-color var(--transition);
+  }
+
+  .mobmenu-soc-list {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+  }
+  .mobmenu-soc-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-brand);
+    border-radius: 50%;
+  }
+  .mobmenu-soc-icon {
+    fill: var(--light-background);
+  }
+
+  .mob-menu-link.current {
+    color: var(--btn-background);
+  }
+  .mob-menu-link:hover,
+  .mob-menu-link:focus {
+    color: var(--btn-background);
+  }
+  .mob-menu-link-email:hover,
+  .mob-menu-link-email:focus {
+    color: var(--btn-background);
+  }
+  .footerpage-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerpage-form-text {
+    text-align: center;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob-2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .modal {
+    max-width: 408px;
+  }
+  /* ----------HEADER---------- */
+  .mob-menu {
+    display: none;
+  }
+  .mob-menu-btn {
+    display: none;
+  }
+  .headerpage-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headerpage-menu {
+    display: flex;
+  }
+  .headerpage-logo {
+    display: block;
+    margin-right: 120px;
+  }
+
+  .headerpage-menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .headerpage-menu-list {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color var(--transition);
+    position: relative;
+  }
+
+  .headerpage-menu-list.current {
+    color: var(--btn-background);
+  }
+  .headerpage-menu-list.current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-brand);
+    margin-top: 20px;
+  }
+
+  .headerpage-menu-list:hover,
+  .headerpage-menu-list:focus {
+    color: var(--btn-background);
+  }
+  .list-contacts {
+    display: block;
+  }
+
+  .list-contacts-item {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    transition: color var(--transition);
+  }
+
+  .list-contacts-item:hover,
+  .list-contacts-item:focus {
+    color: var(--btn-background);
+  }
+
+  .contacts {
+    font-style: normal;
+  }
+  /* ----------HERO---------- */
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+    }
+  }
+  .hero-text {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+  /* ----------Sections---------- */
+  .features-list {
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+    flex-direction: row;
+  }
+
+  .features-item {
+    max-width: 356px;
+  }
+  .section-subtitle {
+    text-align: left;
+  }
+  /* ----------Our Team---------- */
+  .section-team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 64px;
+  }
+  /* ----------Customers---------- */
+  .customers-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .customers-item {
+    max-width: 168px;
+  }
+  .customers-link {
+    padding: 16px 32px;
+  }
+  /* ----------Footer---------- */
+  .footer-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 72px 24px;
+    width: 552px;
+  }
+  .footerpage-content {
+    margin: 0;
+  }
+  .footerpage-content > .footerpage-logo {
+    display: block;
+  }
+
+  .footerpage-text {
+    max-width: 264px;
+    margin-top: 16px;
+  }
+  .soc-media-text {
+    text-align: left;
+  }
+
+  .subscribe-input {
+    width: 264px;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .headerpage {
+    padding-bottom: 24px;
+  }
+  .headerpage-logo {
+    line-height: 1.33;
+    margin-right: 76px;
+  }
+  .list-contacts {
+    display: flex;
+  }
+  .list-contacts-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .list-contacts > li:not(:last-child) {
+    margin-right: 40px;
+  }
+  /* ----------HERO---------- */
+
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    max-width: 1440px;
+  }
+  .hero-text {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 48px;
+    max-width: 496px;
+  }
+  /* ----------Sections---------- */
+  .section-examples.section {
+    padding-top: 0;
+  }
+  .section-examples-list {
+    display: flex;
+    gap: 24px;
+  }
+  .section-examples {
+    display: flex;
+  }
+  .section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  /* ----------Features---------- */
+  .icon {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    background-color: var(--light-background);
+    margin-bottom: 8px;
+  }
+  .features-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .features-item {
+    flex-basis: calc((100% - (3 * 24px)) / 4);
+  }
+
+  /* ----------Our Team---------- */
+  .section-team-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .section-team-card {
+    width: 264px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
+  /* ----------Customers---------- */
+  .customers-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  /* ----------Footer---------- */
+  .footerpage {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+    width: 100%;
+    gap: 0;
+  }
+  .footerpage-logo {
+    line-height: 1.33;
+  }
+
+  .soc-media {
+    display: inline-block;
+    margin-left: 120px;
+  }
+  .soc-media-list {
+    gap: 24px;
+    margin-top: 16px;
+  }
+
+  .footerpage-form {
+    display: block;
+    margin-left: auto;
+  }
+  .subscribe-input {
+    padding: 8px 24px;
+  }
+
+  .subscribe-input::placeholder {
+    color: var(--primery-bcg);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+  }
+  .subscribe-form {
+    display: flex;
+  }
+}
